@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body
+       {
+        background-color: red;
+       }
+       *
+       {
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <center>
+        <table border="2px">
+            <h1>Employee Table</h1>
+        <tr>
+            <th>Emp.NO</th>
+            <th>Ename</th>
+            <th>Salary</th>
+            <th>Job</th>
+            <th>Dept.no</th>
+        </tr>
+
+    {% for EO in emp %}
+
+        <tr>
+            <td>{{EO.empno}}</td>
+            <td>{{EO.ename}}</td>
+            <td>{{EO.sal}}</td>
+            <td>{{EO.job}}</td>
+            <td>{{EO.deptno}}</td>
+        </tr>
+
+    {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
